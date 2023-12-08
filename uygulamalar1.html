@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #kapsayici {
+            display: flex;
+            width: 700px;
+            height: 220px;
+        }
+
+        #kapsayici2 {
+            display: flex;
+            width: 350px;
+            height: 120px;
+        }
+
+        #kapsayici3 {
+            display: flex;
+            width: 350px;
+            height: 120px;
+        }
+
+        #kapsayici4 {
+            display: flex;
+            width: 350px;
+            height: 120px;
+        }
+
+        #ilkdiv {
+            display: flex;
+            width: 350px;
+            height: 220px;
+            background-color: pink;
+            justify-content: space-evenly;
+        }
+
+        .item {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        #ikincidiv {
+            display: flex;
+            width: 350px;
+            height: 220px;
+            background-color: red;
+            justify-content: space-evenly;
+        }
+
+        #ikincidivorta {
+            align-self: flex-end;
+        }
+
+        .ucuncudiv {
+            display: flex;
+            width: 350px;
+            height: 120px;
+            background-color: red;
+            justify-content: space-between;
+        }
+
+        .dortuncudiv {
+            display: flex;
+            width: 350px;
+            height: 120px;
+            background-color: black;
+            justify-content: space-between;
+        }
+
+        .clear {
+            flex-basis: 100%;
+            height: 0;
+        }
+
+        #besdiv {
+            display: flex;
+            width: 350px;
+            height: 120px;
+            background-color: red;
+            justify-content: flex-end;
+        }
+
+        #altidiv {
+            display: flex;
+            width: 350px;
+            height: 120px;
+            background-color: pink;
+            justify-content: flex-end;
+        }
+
+        #yedidiv {
+            display: flex;
+            width: 350px;
+            height: 120px;
+            background-color: red;
+            justify-content: flex-end;
+        }
+
+        #sekizdiv {
+            display: flex;
+            width: 350px;
+            height: 120px;
+            background-color: blue;
+            justify-content: flex-start;
+        }
+
+
+
+
+        .zarlar {
+            display: flex;
+            width: 750px;
+            height: 170px;
+            border: 1px solid blue;
+            justify-content: space-around;
+        }
+
+        #zarlar2 {
+            display: flex;
+            width: 750px;
+            height: 170px;
+            background-color: darkred;
+            justify-content: space-evenly;
+        }
+
+        #pembezar {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 5px;
+            background-color: Orchid;
+            justify-content: space-between;
+        }
+
+        #siyahzar {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            margin: 10px;
+            background-color: black;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+        #siyahzar2 {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            margin: 10px;
+            background-color: black;
+            justify-content: space-between;
+        }
+
+        #siyahzar3 {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            margin: 10px;
+            background-color: black;
+            justify-content: space-between;
+        }
+
+        #pembezar1 {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 5px;
+            background-color: Orchid;
+            justify-content: space-between;
+        }
+
+        .zarNoktası {
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            border-radius: 150px;
+        }
+
+        #orta,
+        #orta1,
+        #orta2,
+        #orta3,
+        #orta5 {
+            align-self: center;
+        }
+
+        #son,
+        #son1,
+        #son2,
+        #son3,
+        #son4,
+        #son5 {
+            align-self: flex-end;
+        }
+
+        #baslangic,
+        #baslangic1,
+        #baslangic2,
+        #baslangic3 {
+            align-self: flex-end;
+        }
+
+        #basbaslangic,
+        #basbaslangic2 {
+            align-items: flex-start;
+        }
+
+        .yesilzar {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            padding: 5px;
+            justify-content: space-between;
+            background-color: green;
+        }
+
+        #padding {
+            box-sizing: content-box;
+            padding: 0px 25px;
+        }
+
+        #mavizar {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            margin: 10px;
+            background-color: skyblue;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+        #mavizar2 {
+            display: flex;
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            margin: 10px;
+            background-color: skyblue;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kapsayici">
+        <div id="ilkdiv">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div id="ikincidiv">
+            <div class="item"></div>
+            <div class="item" id="ikincidivorta"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+
+    <div id="kapsayici2">
+        <div class="ucuncudiv">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="dortuncudiv">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+    <!-- <div id="kapsayici3">
+        <div id="besdiv">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div id="altidiv">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+    <div id="kapsayici4">
+        <div id="yedidiv">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div id="sekizdiv">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div> -->
+    <hr>
+
+    <div class="zarlar">
+        <div id="pembezar">
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası" id="orta"></div>
+            <div class="zarNoktası" id="son"></div>
+        </div>
+        <div id="siyahzar">
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası"></div>
+        </div>
+        <div id="pembezar1">
+            <div class="zarNoktası" id="baslangic"></div>
+            <div class="zarNoktası" id="orta1"></div>
+            <div class="zarNoktası"></div>
+        </div>
+    </div>
+    <div id="zarlar2">
+        <div class="yesilzar">
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası" id="ortanca"></div>
+            <div class="zarNoktası" id="son1"></div>
+        </div>
+        <div class="yesilzar" id="padding">
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası" id="orta2"></div>
+            <div class="zarNoktası" id="son2"></div>
+        </div>
+        <div class="yesilzar">
+            <div class="zarNoktası" id="baslangic1"></div>
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası" id="orta3"></div>
+        </div>
+    </div>
+    <div class="zarlar">
+        <div id="siyahzar2">
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası" id="orta"></div>
+            <div class="zarNoktası" id="son3"></div>
+        </div>
+        <div id="mavizar">
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası" id="orta5"></div>
+            <div class="zarNoktası"></div>
+        </div>
+        <div id="siyahzar3">
+            <div class="zarNoktası" id="basbaslangic"></div>
+            <div class="zarNoktası" id="son4"></div>
+            <div class="zarNoktası" id="basbaslangic2"></div>
+        </div>
+        <div id="mavizar2">
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası"></div>
+            <div class="zarNoktası"></div>
+        </div>
+    </div>
+</body>
+
+</html>
