@@ -19,7 +19,7 @@
         #kapsayici2 {
             display: flex;
             width: 350px;
-            height: 120px;
+            height: 140px;
         }
 
         #kapsayici3 {
@@ -63,16 +63,16 @@
 
         .ucuncudiv {
             display: flex;
-            width: 350px;
-            height: 120px;
+            min-width: 350px;
+            height: 140px;
             background-color: red;
             justify-content: space-between;
         }
 
         .dortuncudiv {
             display: flex;
-            width: 350px;
-            height: 120px;
+            min-width: 350px;
+            height: 140px;
             background-color: black;
             justify-content: space-between;
         }
@@ -84,7 +84,7 @@
 
         #besdiv {
             display: flex;
-            width: 350px;
+            min-width: 350px;
             height: 120px;
             background-color: red;
             justify-content: flex-end;
@@ -92,7 +92,7 @@
 
         #altidiv {
             display: flex;
-            width: 350px;
+            min-width: 350px;
             height: 120px;
             background-color: pink;
             justify-content: flex-end;
@@ -100,22 +100,20 @@
 
         #yedidiv {
             display: flex;
-            width: 350px;
-            height: 120px;
+            min-width: 350px;
+            height: 140px;
+            align-items: flex-end;
             background-color: red;
-            justify-content: flex-end;
         }
 
         #sekizdiv {
             display: flex;
-            width: 350px;
-            height: 120px;
+            min-width: 350px;
+            height: 140px;
             background-color: blue;
+            align-items: flex-end;
             justify-content: flex-start;
         }
-
-
-
 
         .zarlar {
             display: flex;
@@ -185,7 +183,7 @@
             justify-content: space-between;
         }
 
-        .zarNoktası {
+        .zarNoktasi {
             width: 45px;
             height: 45px;
             background-color: white;
@@ -258,6 +256,22 @@
             justify-content: space-between;
             flex-direction: row-reverse;
         }
+
+        #zarparcasi {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        #sonuncu {
+            align-self: flex-end;
+        }
+
+        #zarparcasi2 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
     </style>
 </head>
 
@@ -285,7 +299,7 @@
             <div class="item"></div>
         </div>
     </div>
-    <!-- <div id="kapsayici3">
+    <div id="kapsayici3">
         <div id="besdiv">
             <div class="item"></div>
             <div class="item"></div>
@@ -298,69 +312,72 @@
     <div id="kapsayici4">
         <div id="yedidiv">
             <div class="item"></div>
-            <div class="item"></div>
         </div>
         <div id="sekizdiv">
             <div class="item"></div>
             <div class="item"></div>
         </div>
-    </div> -->
-    <hr>
+    </div>
+    <br>
 
     <div class="zarlar">
         <div id="pembezar">
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası" id="orta"></div>
-            <div class="zarNoktası" id="son"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi" id="orta"></div>
+            <div class="zarNoktasi" id="son"></div>
         </div>
         <div id="siyahzar">
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi"></div>
         </div>
         <div id="pembezar1">
-            <div class="zarNoktası" id="baslangic"></div>
-            <div class="zarNoktası" id="orta1"></div>
-            <div class="zarNoktası"></div>
+            <div class="zarNoktasi" id="baslangic"></div>
+            <div class="zarNoktasi" id="orta1"></div>
+            <div class="zarNoktasi"></div>
         </div>
     </div>
     <div id="zarlar2">
         <div class="yesilzar">
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası" id="ortanca"></div>
-            <div class="zarNoktası" id="son1"></div>
+            <div class="zarNoktasi"></div>
+            <div id="zarparcasi">
+                <div class="zarNoktasi"></div>
+                <div class="zarNoktasi" id="sonuncu"></div>
+            </div>
         </div>
         <div class="yesilzar" id="padding">
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası" id="orta2"></div>
-            <div class="zarNoktası" id="son2"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi" id="orta2"></div>
+            <div class="zarNoktasi" id="son2"></div>
         </div>
         <div class="yesilzar">
-            <div class="zarNoktası" id="baslangic1"></div>
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası" id="orta3"></div>
+            <div class="zarNoktasi" id="baslangic1"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi" id="orta3"></div>
         </div>
     </div>
     <div class="zarlar">
         <div id="siyahzar2">
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası" id="orta"></div>
-            <div class="zarNoktası" id="son3"></div>
+            <div class="zarNoktasi"></div>
+            <div id="zarparcasi2">
+                <div class="zarNoktasi" id="orta"></div>
+                <div class="zarNoktasi" id="son3"></div>
+            </div>
         </div>
         <div id="mavizar">
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası" id="orta5"></div>
-            <div class="zarNoktası"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi" id="orta5"></div>
+            <div class="zarNoktasi"></div>
         </div>
         <div id="siyahzar3">
-            <div class="zarNoktası" id="basbaslangic"></div>
-            <div class="zarNoktası" id="son4"></div>
-            <div class="zarNoktası" id="basbaslangic2"></div>
+            <div class="zarNoktasi" id="basbaslangic"></div>
+            <div class="zarNoktasi" id="son4"></div>
+            <div class="zarNoktasi" id="basbaslangic2"></div>
         </div>
         <div id="mavizar2">
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası"></div>
-            <div class="zarNoktası"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi"></div>
+            <div class="zarNoktasi"></div>
         </div>
     </div>
 </body>
