@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url("world.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #ustkisim {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+        }
+
+        #kapsayici {
+            width: 100px;
+            padding: 5px;
+            color: white;
+            justify-content: flex-end;
+        }
+
+        #dots {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nasil,
+        #havadurumudenetimi,
+        #dot {
+            display: none;
+        }
+
+        #kapsayici:hover {
+            width: 175px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(66, 85, 121);
+        }
+
+        #kapsayici:hover>#havadurumu {
+            color: red;
+        }
+
+
+        #kapsayici:hover>#nasil {
+            display: block;
+            color: red;
+            padding: 5px 0;
+        }
+
+        #kapsayici:hover>#havadurumudenetimi {
+            display: block;
+        }
+
+        #kapsayici:hover #dot {
+            display: inline;
+        }
+
+        #search {
+            display: flex;
+            margin-top: 15px;
+            justify-content: center;
+            padding: 0 50px;
+        }
+
+        #search-bar {
+            border: 0px;
+            outline: 0px;
+            border-bottom: 1px solid white;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            justify-content: center;
+        }
+
+        #search>i {
+            color: white;
+            padding: 15px;
+        }
+
+        #cards {
+            margin-top: 20px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-direction: row;
+            width: 100vw;
+        }
+
+        #cards {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            width: 100px;
+            height: 75px;
+            margin: 15px;
+            flex-wrap: wrap;
+            background-color: red;
+            border-radius: 2px;
+            opacity: .7;
+        }
+
+        #cards-orta .card,
+        #cards-alt .card {
+            border-radius: 25px 5px;
+        }
+
+        .icon,
+        #alisveris {
+            color: white;
+        }
+
+        #sag-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        #cards-alt {
+            display: flex;
+            /* justify-content: flex-end;
+            align-items: flex-end; */
+            margin: 0 auto;
+        }
+
+        #cards-orta {
+            margin: 0 auto;
+        }
+
+        #cards-ust {
+            display: flex;
+            justify-content: center;
+        }
+
+        #cards-alt {
+            margin-top: 150px;
+            display: flex;
+            max-width: 800px;
+            width: auto;
+            /* margin: 0 auto; */
+        }
+
+        #ust {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="ustkisim">
+            <div id="kapsayici">
+                <div id="oslo">
+                    <div id="dots">Oslo<i id="dot" class="fa-solid fa-ellipsis"></i></div>
+                </div>
+
+                <div id="havadurumu">
+                    <span id="sun"><i class="fa-solid fa-sun"></i></span><span id="derece"> -10 °C</span>
+                </div>
+                <div id="nasil">Güneşli</div>
+                <div id="havadurumudenetimi">Hava durumu denetimi</div>
+            </div>
+
+            <div id="search">
+                <i class="fa-brands fa-google-plus"></i>
+                <form action="">
+                    <input id="search-bar" class="search-query" name="search" placeholder="Web'de ara">
+                </form>
+            </div>
+        </div>
+
+        <div id="cards">
+            <center id="ust">
+                <details>
+                    <summary id="alisveris">Alışverişe devam et (4 öğe)</summary>
+                    <div class="cards" id="cards-ust">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                </details>
+            </center>
+            <div class="cards" id="cards-orta">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+        <div id="card2">
+            <div id="cards-alt">
+                <div class="cards">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <i id="sag-icon" class="fa-solid fa-angle-right icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
