@@ -36,10 +36,10 @@
         }
 
         #kapsayici {
+            position: absolute;
             width: 100px;
             padding: 5px;
             color: white;
-            justify-content: flex-end;
         }
 
         #dots {
@@ -83,13 +83,14 @@
         #search {
             display: flex;
             margin-top: 15px;
+            width: 100%;
             justify-content: center;
-            padding: 0 50px;
         }
 
         #search-bar {
             border: 0px;
             outline: 0px;
+            width: 500px;
             border-bottom: 1px solid white;
             padding: 10px;
             background-color: rgba(255, 255, 255, 0);
@@ -118,6 +119,10 @@
             width: 100vw;
         }
 
+        .card:hover {
+            opacity: 1;
+        }
+
         #cards {
             display: flex;
             max-width: 800px;
@@ -129,8 +134,8 @@
             height: 75px;
             margin: 15px;
             flex-wrap: wrap;
-            background-color: red;
-            border-radius: 2px;
+            /* background-color: red; */
+            /* border-radius: 2px; */
             opacity: .7;
         }
 
@@ -151,8 +156,6 @@
 
         #cards-alt {
             display: flex;
-            /* justify-content: flex-end;
-            align-items: flex-end; */
             margin: 0 auto;
         }
 
@@ -160,21 +163,86 @@
             margin: 0 auto;
         }
 
-        #cards-ust {
-            display: flex;
-            justify-content: center;
-        }
-
         #cards-alt {
             margin-top: 150px;
             display: flex;
             max-width: 800px;
             width: auto;
-            /* margin: 0 auto; */
         }
 
         #ust {
             margin-bottom: 30px;
+        }
+
+        #img {
+            width: 30px;
+            margin: 5px;
+        }
+
+        .card-img {
+            width: 100px;
+            border-radius: 2px;
+        }
+
+        .youtube {
+            margin: 15px 0;
+        }
+
+        .ali {
+            height: 75px;
+        }
+
+        .card-x {
+            display: none;
+        }
+
+        .card:hover .x {
+            display: flex;
+            justify-content: center;
+            color: blue;
+        }
+
+        .card {
+            position: relative;
+        }
+
+        .card-x i {
+            position: relative;
+        }
+
+        .x {
+            display: none;
+            position: absolute;
+            top: 1px;
+            right: 2px;
+        }
+
+        #alisverisilk {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            min-width: 700px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            width: 800px;
+        }
+
+        .text {
+            text-align: center;
+            color: white;
+        }
+
+        .text {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        #cards-ust {
+            max-width: 800px;
         }
     </style>
 </head>
@@ -195,50 +263,108 @@
             </div>
 
             <div id="search">
-                <i class="fa-brands fa-google-plus"></i>
+                <img src="google.svg" id="img">
                 <form action="">
                     <input id="search-bar" class="search-query" name="search" placeholder="Web'de ara">
                 </form>
             </div>
         </div>
 
-        <div id="cards">
-            <center id="ust">
-                <details>
-                    <summary id="alisveris">Alışverişe devam et (4 öğe)</summary>
-                    <div class="cards" id="cards-ust">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
+        <div id="alisverisilk">
+            <details>
+                <summary id="alisveris">Alışverişe devam et (4 öğe)</summary>
+                <div class="cards" id="cards-ust">
+                    <div class="card"><img src="twitch2.jpg" class="card-img" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube Youtube Youtube Youtube </div>
                     </div>
-                </details>
-            </center>
+                    <div class="card"><img src="ali.png" class="card-img ali" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="card"><img src="youtube.png" class="card-img youtube" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="card"><img src="twitch2.jpg" class="card-img" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div id="cards">
             <div class="cards" id="cards-orta">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <div class="card"><img src="twitch2.jpg" class="card-img" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="ali.png" class="card-img ali" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="youtube.png" class="card-img youtube" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="twitch2.jpg" class="card-img" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="ali.png" class="card-img ali" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="youtube.png" class="card-img youtube" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="twitch2.jpg" class="card-img" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="ali.png" class="card-img ali" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
+                <div class="card"><img src="youtube.PNG" class="card-img youtube" />
+                    <div class="x">X</div>
+                    <div class="text">Youtube</div>
+                </div>
             </div>
         </div>
         <div id="card2">
             <div id="cards-alt">
                 <div class="cards">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card"><img src="twitch2.jpg" class="card-img" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="card"><img src="ali.png" class="card-img ali" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="card"><img src="youtube.png" class="card-img youtube" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="card"><img src="twitch2.jpg" class="card-img" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="card"><img src="ali.png" class="card-img ali" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
+                    <div class="card"><img src="youtube.png" class="card-img youtube" />
+                        <div class="x">X</div>
+                        <div class="text">Youtube</div>
+                    </div>
                     <i id="sag-icon" class="fa-solid fa-angle-right icon"></i>
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 
