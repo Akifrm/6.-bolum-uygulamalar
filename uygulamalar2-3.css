@@ -47,6 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(66, 85, 121);
+    transition: width 2s;
 }
 
 #kapsayici:hover>#havadurumu {
@@ -114,7 +115,6 @@ body {
 
 .card:hover {
     opacity: 1;
-    transition: opacity 0.5s;  
 }
 
 .card {
@@ -124,6 +124,7 @@ body {
     flex-wrap: wrap;
     opacity: .7;
     position: relative;
+    transition: opacity 5s; 
 }
 
 #cards-orta .card,
