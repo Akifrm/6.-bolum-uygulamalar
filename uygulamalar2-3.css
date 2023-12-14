@@ -124,7 +124,7 @@ body {
     flex-wrap: wrap;
     opacity: .7;
     position: relative;
-    transition: opacity 5s; 
+    transition: opacity 0.5s; 
 }
 
 #cards-orta .card,
