@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+#kapsayici {
+    display: flex;
+    width: 700px;
+    height: 220px;
+}
+
+#kapsayici2 {
+    display: flex;
+    width: 350px;
+    height: 140px;
+}
+
+#kapsayici3 {
+    display: flex;
+    width: 350px;
+    height: 120px;
+}
+
+#kapsayici4 {
+    display: flex;
+    width: 350px;
+    height: 120px;
+}
+
+#ilkdiv {
+    display: flex;
+    width: 350px;
+    height: 220px;
+    background-color: pink;
+    justify-content: space-evenly;
+}
+
+.item {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+}
+
+#ikincidiv {
+    display: flex;
+    width: 350px;
+    height: 220px;
+    background-color: red;
+    justify-content: space-evenly;
+}
+
+#ikincidivorta {
+    align-self: flex-end;
+}
+
+.ucuncudiv {
+    display: flex;
+    min-width: 350px;
+    height: 140px;
+    background-color: red;
+    justify-content: space-between;
+}
+
+.dortuncudiv {
+    display: flex;
+    min-width: 350px;
+    height: 140px;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.clear {
+    flex-basis: 100%;
+    height: 0;
+}
+
+#besdiv {
+    display: flex;
+    min-width: 350px;
+    height: 120px;
+    background-color: red;
+    justify-content: flex-end;
+}
+
+#altidiv {
+    display: flex;
+    min-width: 350px;
+    height: 120px;
+    background-color: pink;
+    justify-content: flex-end;
+}
+
+#yedidiv {
+    display: flex;
+    min-width: 350px;
+    height: 140px;
+    align-items: flex-end;
+    background-color: red;
+}
+
+#sekizdiv {
+    display: flex;
+    min-width: 350px;
+    height: 140px;
+    background-color: blue;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.zarlar {
+    display: flex;
+    width: 750px;
+    height: 170px;
+    border: 1px solid blue;
+    justify-content: space-around;
+}
+
+#zarlar2 {
+    display: flex;
+    width: 750px;
+    height: 170px;
+    background-color: darkred;
+    justify-content: space-evenly;
+}
+
+#pembezar {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 5px;
+    background-color: Orchid;
+    justify-content: space-between;
+}
+
+#siyahzar {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#siyahzar2 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    background-color: black;
+    justify-content: space-between;
+}
+
+#siyahzar3 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    background-color: black;
+    justify-content: space-between;
+}
+
+#pembezar1 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 5px;
+    background-color: Orchid;
+    justify-content: space-between;
+}
+
+.zarNoktasi {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 150px;
+}
+
+#orta,
+#orta1,
+#orta2,
+#orta3,
+#orta5 {
+    align-self: center;
+}
+
+#son,
+#son1,
+#son2,
+#son3,
+#son4,
+#son5 {
+    align-self: flex-end;
+}
+
+#baslangic,
+#baslangic1,
+#baslangic2,
+#baslangic3 {
+    align-self: flex-end;
+}
+
+#basbaslangic,
+#basbaslangic2 {
+    align-items: flex-start;
+}
+
+.yesilzar {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: green;
+}
+
+#padding {
+    box-sizing: content-box;
+    padding: 0px 25px;
+}
+
+#mavizar {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    background-color: skyblue;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#mavizar2 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    background-color: skyblue;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+#zarparcasi {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#sonuncu {
+    align-self: flex-end;
+}
+
+#zarparcasi2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
