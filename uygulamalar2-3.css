@@ -26,7 +26,6 @@ body {
 
 #kapsayici {
     position: absolute;
-    width: 100px;
     padding: 5px;
     color: white;
 }
@@ -43,7 +42,7 @@ body {
 }
 
 #kapsayici:hover {
-    width: 145px;
+    width: 175px;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -115,6 +114,7 @@ body {
 
 .card:hover {
     opacity: 1;
+    transition: opacity 0.5s;  
 }
 
 .card {
